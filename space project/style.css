@@ -1,0 +1,133 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(216, 214, 201);
+    text-decoration: none;
+    font-size: 20px; /* Reduced font size for better fit */
+    padding: 10px; /* Reduced padding for better fit */
+}
+
+nav ul li a:hover {
+  border-radius: 2PX;  /* Semi-transparent white background on hover */
+}
+.container {
+    position: relative; /* Changed position to absolute */
+    top: 20%; /* Adjusted top position to center vertically */
+    left: 20px; /* Adjusted left position to center horizontally */
+  width: 40%;
+  max-width: 250px;
+    background-color:transparent;
+     
+    display: flex;
+    flex-direction: column; /* Ensures elements stack vertically */
+    align-items: center; /* Centers items horizontally within the container */
+    padding: 50px;
+    z-index: }
+    .container img {
+        width: 100%; /* Make the image fill the container width */
+        max-width: 250px; /* Limit the maximum width of the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 15px; /* Adjust margin bottom as needed */
+        position: absolute; /* Position the image absolutely */
+        top: -110px; /* Adjust the distance above the heading */
+        left: 0; /* Center the image horizontally */
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;}
+.container h2{
+    
+        color: #ffffff; /* Change heading color */
+        font-size: 34px;
+        font-style: italic;
+
+         /* Change heading font size */
+        font-weight: bold; /* Optionally change heading font weight */
+        margin-bottom: 10px; /* Optionally adjust margin */
+    }
+    
+    .container p {
+        color: #b8b0ce; /* Change paragraph color */
+        font-size: 16px; /* Change paragraph font size */
+        line-height: 2; /* Optionally adjust line height */
+    }
+
+
+    .explore-btn {
+        position: relative;
+        top: 30px; /* Adjust this value as needed */
+        left: 20px; /* Adjust this value as needed */
+        border-radius: 50px;
+        border-color: rgb(221, 255, 210);
+        padding: 25px 10px; /* Adjust padding for better appearance */
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        font-size: 25px; /* Adjust font size for better appearance */
+        font-style: italic;
+        border: 2px solid #fffcfc; /* Fix border color and width */
+        cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .explore-btn:hover {
+        transform: scale(1.1); 
+    }
+
+    
+/* CSS for the "Back to Home" link */body {
+    background-color: #f0f0f0; /* Set background color*/
+        right: 10px; /* Adjusted right position for smaller screens */
+    }
+
+ /* Media query for smaller screens (phones and tablets) */
+@media screen and (max-width: 768px) {
+    nav {
+        top: 10px; /* Adjusted top position for smaller screens */
+        right: 10px; /* Adjusted right position for smaller screens */
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Reduced margin between navigation items */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Reduced font size for better fit on smaller screens */
+    }
+}

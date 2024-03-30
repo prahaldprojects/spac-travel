@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+    background-color: black; /* Added black background color */
+}
+
+.container {
+    font-size: 14px; /* Increased font size for better readability */
+    width: 40em;
+    height: 40em;
+    position: relative;
+    text-align: center;
+}
+
+.container2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em; /* Increased font size for emphasis */
+    transition: transform 0.3s;
+}
+
+h1:hover {
+    transform: scale(1.2); /* Increased size on hover */
+}
+
+.sun {
+    position: absolute;
+    width: 15em;
+    height: 15em;
+    top: 12.5em;
+    left: 12.5em;
+    background-color: #ffe920;
+    border-radius: 50%;
+    box-shadow: 0 0 5em white;
+}
+
+.earth {
+    position: absolute;
+    top: 5em;
+    left: 5em;
+    width: 35em;
+    height: 30em;
+    border-radius: 50%;
+    animation: orbit-earth 36.5s linear infinite;
+}
+
+.moon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit-moon 2.7s linear infinite;
+}
+
+.earth::before {
+    content: "";
+    position: absolute;
+    top: 2.8em;
+    right: 2.8em;
+    width: 1em;
+    height: 4em;
+    background-color: #72cdfa;
+    border-radius: 55%;
+}
+
+.moon::before {
+    content: "";
+    position: absolute;
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+@keyframes orbit-earth {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes orbit-moon {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(216, 215, 208);
+    text-decoration: none;
+    font-size: 16px; /* Reduced font size for better fit */
+    padding: 10px; /* Reduced padding for better fit */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Media Query for phones */
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: center;
+    }
+    
+    .container {
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    .earth {
+        width: 60vw;
+        height: 50vw;
+    }
+    
+    .moon {
+        width: 15vw;
+        height: 15vw;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    nav {
+        top: auto;
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}

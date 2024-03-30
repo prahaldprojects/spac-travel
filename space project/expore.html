@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>explore</title>
+    <style>
+        .toggle-btn{
+            width: 30px;
+            position:absolute;
+            right: 80px;
+            top:40px;
+            display: none;
+
+
+        }
+        .toggle-btn span{
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+            float: left;
+            margin-bottom: 8px;
+
+        }
+        @media (max-width: 991px){
+            .toggle-btn{
+                display: block; 
+        }
+    </style>
+</head>
+<body>
+ <section></section>   <div>
+        <h1>Explore Your Cosmic Adventure: Planetary Travel Costs</h1>
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about .html">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="index2.html">Celestial Rotation</a></li>
+            </ul>
+        </nav>
+    </div>
+   <div class="card-container">
+       <div class="card">
+           <img src="Project (1).jpg">
+           <div class="card-content">
+               <h3>saturn</h3>
+               <p>Saturn, the sixth planet from the Sun, has a diameter of about 120,536 kilometers at its equator and 108,728 kilometers at its poles. Its circumference is roughly 365,882 kilometers. As for its distance from the Sun, it varies due to its elliptical orbit, but on average, Saturn is about 1.4 billion kilometers away from the Sun.</p>
+               <h1> travel cos $1200,9909</h1>
+               <a href="#" class="btn">Read more</a>
+           </div>
+       </div>
+       
+       <div class="card">
+           <img src="mercury.jpg">
+           <div class="card-content">
+               <h3>mercury</h3>
+               <p>Mercury is indeed quite small compared to other planets in our solar system. It has a diameter of about 4,880 kilometers (3,032 miles), making it just slightly larger than Earth's moon.</p>
+               <h1>travel cost $20000,99000</h1>
+               <a href="#" class="btn">Read more</a>
+           </div>
+       </div>
+       
+       <div class="card">
+           <img src="planet4.jpg">
+           <div class="card-content">
+               <h3>earth</h3>
+               <p>travel cost $0</p>
+               <a href="#" class="btn">Read more</a>
+           </div>
+       </div>
+       
+       <div class="card">
+           <img src="planet5.jpg">
+           <div class="card-content">
+               <h3>unkown name planet</h3>
+               <p>In the infinite darkness of space, a solitary black planet drifts silently, its surface cloaked in obsidian shadows.</p>
+              <h1>
+                travel cost $25735,33
+              </h1>
+               <a href="#" class="btn">Read more</a>
+           </div>
+       </div>
+       
+       <div class="card">
+           <img src="planet 3.jpg">
+           <div class="card-content">
+               <h3> mars </h3>
+               <p>Mars, the Red Planet, is our neighboring world, characterized by vast deserts, towering volcanoes, and a mysterious allure. Scientists are intrigued by its potential for harboring signs of past life, while dreamers envision it as humanity's next great frontier. As exploration missions continue to uncover its secrets, Mars remains a beacon of inspiration and curiosity for people around the globe.</p>
+               <h1>travel cost $3300987,3367</h1>
+               <a href="#" class="btn">Read more</a>
+           </div>
+       </div>
+       <div class="card">
+        <img src="planet7.jpg">
+        <div class="card-content">
+            <h3>black planet</h3>
+            <p>Named WASP-104b, the planet absorbs 97-99% of the starlight that hits its surface.</p>
+           <h1>travel cost $583736,33223</h1>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="moon.jpg">
+        <div class="card-content">
+            <h3>moon</h3>
+            
+            <p>he Moon is about 238,855 miles (384,400 kilometers) away from Earth on average, while the Sun is roughly 93 million miles (150 million kilometers) away from Earth.</p>
+            <h1>travel cost $111,2,22222</h1>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </div>
+   </div>
+</section> 
+
+    
+    
+           
+        
+        <section class="slideshow-container">
+          <h1> view of space travel</h1>
+            <div>
+                <img src="pexels-blue-arauz-11470749.jpg" alt="Space Image 1">
+                <img src="pexels-murat-esibatir-4355348.jpg" alt="Space Image 2">
+                <img src="pexels-pixabay-2166.jpg" alt="Space Image 3">
+                <img src="pexels-pixabay-73910.jpg" alt="Space Image 4">
+                <img src="pexels-rdne-stock-project-8474996.jpg" alt="Space Image 5">
+                <img src="pexels-spacex-23795.jpg" alt="Space Image 6">
+                <img src="pexels-thisisengineering-3862143.jpg" alt="Space Image 7">
+               
+            </div>
+    
+        </section>
+   
+</body><script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.slideshow-container img');
+
+    function nextSlide() {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.display = 'block';
+    }
+
+    setInterval(nextSlide, 3000); // Change image every 3 seconds
+</script>
+
+</html>
